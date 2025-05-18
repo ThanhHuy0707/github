@@ -134,7 +134,9 @@ PS D:\Downloads\github> git commit -m 'conflict from master'
  1 file changed, 1 insertion(+)
 PS D:\Downloads\github> 
 
-
+Local, remove
+git push 
+PS D:\Downloads\github> git push https://github.com/ThanhHuy0707/github.git master
 
 
 
