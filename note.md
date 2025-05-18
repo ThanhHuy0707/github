@@ -198,6 +198,19 @@ PS D:\Downloads\github> git branch
   master
 * staging
 
+add master voi staging
+PS D:\Downloads\github> git add .
+PS D:\Downloads\github> git commit -m 'staging branch'
+[staging e45ec1a] staging branch
+ 2 files changed, 53 insertions(+)
+PS D:\Downloads\github> git push
+
+day len master
+PS D:\Downloads\github> git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+PS D:\Downloads\github> git pull
+
 
 
 
