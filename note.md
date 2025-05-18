@@ -30,6 +30,9 @@ git branch: master
 git checkout -b (branch name): đặt tên mình mong muốn (dev)
 trong dev sẽ xây dựng 1 trang contactm 
 
+git merge branch: tổng hợp lại 2 branch
+git branch -d branch name: xóa branch
+
 
 
 
@@ -108,6 +111,8 @@ PS D:\Downloads\github>
 PS D:\Downloads\github> git checkout master: chuyển từ dev sang branch và mất contact.html tại vì nó ở dev chứ o phải master
 Switched to branch 'master'
 PS D:\Downloads\github> 
+
+
 
 
 
