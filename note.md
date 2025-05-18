@@ -146,6 +146,58 @@ PS D:\Downloads\github> git remote add origin https://github.com/ThanhHuy0707/gi
 PS D:\Downloads\github> git push origin master
 
 
+PS D:\Downloads\github> git add .
+PS D:\Downloads\github> git commit -m 'remote clone'
+[master 45846d6] remote clone
+ 2 files changed, 8 insertions(+)
+PS D:\Downloads\github> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS D:\Downloads\github> git remote -v
+origin  https://github.com/ThanhHuy0707/github.git (fetch)
+origin  https://github.com/ThanhHuy0707/github.git (push)
+PS D:\Downloads\github> git push --set-upstream origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 518 bytes | 518.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ThanhHuy0707/github.git
+   cd0ee9e..45846d6  master -> master
+branch 'master' set up to track 'origin/master'.
+PS D:\Downloads\github> git push
+Everything up-to-date
+
+
+PS D:\Downloads\github> git branch
+  conflict
+* dev
+  master
+PS D:\Downloads\github> git push -u origin dev
+
+
+Unpacking objects: 100% (3/3), 859 bytes | 66.00 KiB/s, done.
+From https://github.com/ThanhHuy0707/github
+ * [new branch]      main       -> origin/main
+ * [new branch]      staging    -> origin/staging
+PS D:\Downloads\github> git checkout -b staging origin/staging
+M       note.md
+branch 'staging' set up to track 'origin/staging'.
+Switched to a new branch 'staging'
+PS D:\Downloads\github> git branch
+  conflict
+  dev
+  master
+* staging
+
 
 
 
