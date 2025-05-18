@@ -120,6 +120,22 @@ PS D:\Downloads\github> git commit -m 'git branch'
 PS D:\Downloads\github> 
 
 
+PS D:\Downloads\github> git checkout -b conflict
+Switched to a new branch 'conflict'
+PS D:\Downloads\github> git add .
+PS D:\Downloads\github> git commit -m 'create conflict'
+[conflict 4c655ab] create conflict
+ 2 files changed, 16 insertions(+), 1 deletion(-)
+PS D:\Downloads\github> git checkout master
+Switched to branch 'master'
+PS D:\Downloads\github> git add .
+PS D:\Downloads\github> git commit -m 'conflict from master'
+[master ef1bb66] conflict from master
+ 1 file changed, 1 insertion(+)
+PS D:\Downloads\github> 
+
+
+
 
 
 
