@@ -138,6 +138,13 @@ Local, remove
 git push 
 PS D:\Downloads\github> git push https://github.com/ThanhHuy0707/github.git master
 
+PS D:\Downloads\github> git add .
+PS D:\Downloads\github> git commit -m 'new remote push'
+[master cd0ee9e] new remote push
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+PS D:\Downloads\github> git remote add origin https://github.com/ThanhHuy0707/github.git
+PS D:\Downloads\github> git push origin master
+
 
 
 
