@@ -21,13 +21,17 @@ khi chúng ta thay đổi file index.html
 status thì file được thay đổi chưa được lưu
 add và commit rồi ghi lại ghi chú
 
-git log --oneline hiện id đã commit
+git log --oneline hiện id đã commit, gonj hơn với git log
 
 git checkout id: trở về commit đầu tiên
-trở lại commit đầu tiên phải dùng id thứ 2
+trở lại commit đầu tiên phải dùng id dau tien
 git checkout (breanch name) master: trở lại dự án ban đầu
 git branch: master
-git checkout -b (branch name): đặt tên mình mong muốn 
+git checkout -b (branch name): đặt tên mình mong muốn (dev)
+trong dev sẽ xây dựng 1 trang contactm 
+
+
+
 
 PS D:\Downloads\github> git commit -m 'initial commit'
 [master (root-commit) 591142b] initial commit
@@ -47,6 +51,67 @@ PS D:\Downloads\github> git commit -m 'second commit'
 [master 596ffb1] second commit
  1 file changed, 1 insertion(+)
 PS D:\Downloads\github> 
+
+
+
+PS D:\Downloads\github> git log --oneline
+596ffb1 (HEAD -> master) second commit
+591142b initial commit
+PS D:\Downloads\github> git checkout 591142b
+M       note.md
+Note: switching to '591142b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 591142b initial commit
+PS D:\Downloads\github> git checkout master
+M       note.md
+Previous HEAD position was 591142b initial commit
+Switched to branch 'master'
+
+
+
+PS D:\Downloads\github> git branch
+* master
+PS D:\Downloads\github> git add .
+PS D:\Downloads\github> git commit -m 'third commit'
+[master a1757ff] third commit
+ 1 file changed, 19 insertions(+)
+PS D:\Downloads\github> 
+
+
+dev
+PS D:\Downloads\github> git checkout -b dev
+Switched to a new branch 'dev'
+PS D:\Downloads\github> git branch
+* dev
+  master
+PS D:\Downloads\github> git add .
+PS D:\Downloads\github> git commit -m 'contact mit'
+[dev 1f8f1fd] contact mit
+ 2 files changed, 59 insertions(+), 3 deletions(-)
+ create mode 100644 contact.html
+PS D:\Downloads\github> 
+PS D:\Downloads\github> git checkout master: chuyển từ dev sang branch và mất contact.html tại vì nó ở dev chứ o phải master
+Switched to branch 'master'
+PS D:\Downloads\github> 
+
+
+
+
 
 
 
