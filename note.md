@@ -29,6 +29,25 @@ git checkout (breanch name) master: trở lại dự án ban đầu
 git branch: master
 git checkout -b (branch name): đặt tên mình mong muốn 
 
+PS D:\Downloads\github> git commit -m 'initial commit'
+[master (root-commit) 591142b] initial commit
+ 2 files changed, 45 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 note.md
+PS D:\Downloads\github> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\Downloads\github> git add .
+PS D:\Downloads\github> git commit -m 'second commit'
+[master 596ffb1] second commit
+ 1 file changed, 1 insertion(+)
+PS D:\Downloads\github> 
+
 
 
 
